@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Bichinho Virtual</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    body {
+      transition: 0.5s;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center">
+
+  <!-- 🔥 TOPO DIREITO -->
+  <div class="absolute top-4 right-4 flex items-center gap-3 bg-white/30 p-3 rounded-xl backdrop-blur">
+
+    <img id="avatar" src="cria_norm.png" class="w-14 rounded-full">
+
+    <input 
+      id="nomePet"
+      type="text" 
+      placeholder="Nome..."
+      class="input input-sm input-bordered w-32"
+    >
+
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <h1 class="text-3xl font-bold mb-4">🐾 Bichinho Virtual</h1>
+
+  <img id="pet" src="cria_norm.png" class="w-64">
+
+  <p id="status" class="text-lg font-bold mt-2">Estado: Normal</p>
+
+  <button id="btnAlimentar" class="btn btn-primary mt-4">
+    Alimentar 🍎
+  </button>
+
+  <label class="flex items-center gap-2 mt-4">
+    <span>Modo Noite</span>
+    <input type="checkbox" id="modoNoite" class="toggle">
+  </label>
+
+  <script src="script.js"></script>
+</body>
+</html>
